@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ html {
+    scroll-behavior: smooth;
+ }
+ 
+ nav,
+ header,
+ section,
+ footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;}
+ @font-face {
+    src: url(../fonts/poppins.woff2);
+    font-family: 'Poppins';
+ }
+ 
+ body {
+
+    font-family: 'Poppins';
+ }
+ a {
+    text-decoration: none;
+    color: unset;
+ }
+ 
+ h2 {
+    font-size: 34px;
+ }
+ 
+ h3 {
+    font-size: 1.2rem;
+ }
+ 
+ h1,
+ h2,
+ h3 {
+
+    font-weight: bold;
+ }
+ 
+ img {
+
+    max-width: 100%;
+ }
+ 
+ /* Navigasi */
+ 
+ nav {
+
+    background-color: #8caae1;
+    box-shadow: 0 3px 7px -2px #000;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 500;
+ }
+ 
+ img.logo {
+    /* height mengatur tinggi elemen */
+    height: 40px;
+    /* penjelasan margin mirip dengan padding, fungsinya untuk memberi jarak pada elemen */
+    margin-left: 20px;
+ }
+ 
+ div.navigasi {
+    margin-left: auto;
+    margin-right: 15px;
+ }
+ 
+ nav a {
+    color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+ }
+ 
+ a.shop {
+    margin-right: 100px;
+ }
+ 
+ a.chat {
+    margin-right: 30px;
+    background-color: rgb(13, 236, 13);
+    color: #fff;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-radius: 10px;
+ }
+
+ header,
+ section {
+    /*
+     padding mengatur jarak ke dalam
+     pada padding dan margin ditambahkan top / right / bottom / top 
+     untuk mengatur jarak masing-masing 
+    */
+    padding-top: 80px;
+    padding-bottom: 80px;
+ 
+    /* margin mengatur jarak ke luar */
+    margin-bottom: 80px;
+ }
+ 
+ /* penulisan CSS dapat digabung dengan beberapa elemen */
+ header div.kiri,
+ header div.kanan {
+    /* width mengatur lebar elemen. 50% artinya setengah ukuran elemen pembungkus */
+    width: 50%;
+    padding: 50px;
+ }
+ 
+ header h1 {
+    margin-bottom: 20px;
+ }
+ 
+ header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+ }
+
+.wrapper .button{
+   display: inline-block;
+   height: 30px;
+   width: 30px;
+   float: left;
+   margin: 0 5px;
+   overflow: hidden;
+   background: #fff;
+   border-radius: 50px;
+   cursor: pointer;
+   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+   width: 150px;
+ }
+.wrapper .button .icon{
+   display: inline-block;
+   height: 30px;
+   width: 30px;
+   text-align: center;
+   border-radius: 50px;
+   box-sizing: border-box;
+   line-height: 60px;
+   transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+   background:#4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+   background:#E1306C;
+}
+.wrapper .button:nth-child(3):hover .icon{
+   background:#1DA1F2;
+}
+.wrapper .button:nth-child(4):hover .icon{
+   background:#ff0000;
+}
+.wrapper .button .icon{
+   font-size: 25px;
+   line-height: 30px;
+   transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon{
+   color: #fff;
+}
+.wrapper .button .span{
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 30px;
+   margin-left: 10px;
+   transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+   background:#4267B2 ;
+}
+.wrapper .button:nth-child(2) span{
+   background:#E1306C ;
+}
+.wrapper .button:nth-child(3) span{
+   background:#1DA1F2 ;
+}
+.wrapper .button:nth-child(4) span{
+   background:#ff0000 ;
+}
+
+ /* FOOTER */
+ 
+ footer {
+    background-color: #8caae1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+    padding-right: 40px;
+    padding-left: 40px;
+ }
+ 
+ footer div.navigasi {
+    margin-left: 20px;
+    margin-right: auto;
+ }
+ 
+ footer div.navigasi a {
+    padding: 8px;
+ }
+ 
+ /* UNTUK kode RESPONSIF hari ke 3 tulis DI BAWAH sini */
+ 
+ @media (max-width:600px) {
+    .navigasi {
+       display: none;
+    }
+ 
+    a.shop {
+       margin-right: 4px;
+       margin-left: auto;
+    }
+ 
+    header div.kiri,
+    header div.kanan {
+       width: 80%;
+       padding: 20px;
+       text-align: center;
+    }
+ 
+ body {
+    background-image: url(images/background/bgku.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ 
+    /* aspect-ratio:1 agar tinggi menyesuaikan width */
+
+ 
+ } 
+ 
+ /* Kode CSS Selesai di sini */
