@@ -1,2 +1,1 @@
-# Pengumuman-Kelulusan
-Web
+# Pengumumansaja
